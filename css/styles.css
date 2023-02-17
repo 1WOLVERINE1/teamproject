@@ -162,6 +162,12 @@ img {
   line-height: 1.25;
   letter-spacing: 0.02em;
 }
+.slider-content-img {
+  display: flex;
+}
+.slider-first-img {
+  margin-right: 25px;
+}
 .left-btn {
   padding: 0;
   background-color: transparent;
