@@ -185,7 +185,7 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .about-img-list {
-    max-width: 548px;
+    max-width: 428px;
     display: flex;
     gap: 40px;
     margin-left: auto;
@@ -195,6 +195,7 @@ img {
 }
 @media screen and (min-width: 1280px) {
   .about-img-list {
+    max-width: 548px;
     margin-bottom: 36px;
   }
 }
