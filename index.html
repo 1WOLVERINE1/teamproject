@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,19 +28,27 @@
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img
-          class="first-img"
-          srcset="./img/aboutrest/mobile/restaurant-interior-mobile.webp 1x, ./img/aboutrest/mobile/restaurant-interior-mobile@2x.webp 2x"
-          src="./img/aboutrest/mobile/restaurant-interior-mobile.webp"
-          alt="restourant interior"
-        />
-        <div class="restoraunt-content">
-         <img 
-          class="second-img" 
-          srcset="./img/aboutrest/mobile/interior-chairs-mobile.webp 1x, ./img/aboutrest/mobile/interior-chairs-mobile@2x.webp 2x" 
-          src="./img/aboutrest/mobile/interior-chairs-mobile.webp" 
-          alt="restoraunt chairs" 
+        <picture>
+          <source srcset="./img/desktop/restaurant-interior-desktop.webp 1x, ./img/aboutrest/desktop/restaurant-interior-desktop@2x.webp 2x" media="(min-width: 1280px)" />
+          <source srcset="./img/tablet/restaurant-interior-tablet.webp 1x, ./img/aboutrest/tablet/restaurant-interior-tablet@2x.webp 2x" media="(min-width: 1024px)" />
+         <img
+           class="first-img"
+           srcset="./img/aboutrest/mobile/restaurant-interior-mobile.webp 1x, ./img/aboutrest/mobile/restaurant-interior-mobile@2x.webp 2x"
+           src="./img/aboutrest/mobile/restaurant-interior-mobile.webp"
+           alt="restourant interior"
          />
+        </picture>
+        <div class="restoraunt-content">
+          <picture>
+            <source srcset="./img/desktop/interior-chairs-desktop.webp 1x, ./img/aboutrest/desktop/interior-chairs-desktop@2x.webp 2x" media="(min-width: 1280px)" />
+            <source srcset="./img/tablet/interior-chairs-tablet.webp 1x, ./img/aboutrest/tablet/interior-chairs-tablet@2x.webp 2x" media="(min-width: 1024px)" />
+           <img 
+             class="second-img" 
+             srcset="./img/aboutrest/mobile/interior-chairs-mobile.webp 1x, ./img/aboutrest/mobile/interior-chairs-mobile@2x.webp 2x" 
+             src="./img/aboutrest/mobile/interior-chairs-mobile.webp" 
+             alt="restoraunt chairs" 
+           />
+          </picture>
          <p class="minor-text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -48,55 +56,96 @@
         </div>
         </p>
         <div class="slider-content-img">
-         <img
-           class="slider-first-img"
-           srcset="./img/aboutrest/mobile/tea-mobile.webp 1x, ./img/aboutrest/mobile/tea-mobile@2x.webp 2x" 
-           src="./img/aboutrest/mobile/tea-mobile.webp" 
-           alt="tea on table" 
-         />
-         <img
-           class="slider-second-img"
-           srcset="./img/aboutrest/mobile/breakfast-mobile.webp 1x, ./img/aboutrest/mobile/breakfast-mobile@2x.webp 2x" 
-           src="./img/aboutrest/mobile/breakfast-mobile.webp" 
-           alt="breakfast on table" 
-         />
+          <ul class="about-img-list">
+            <li class="about-img-item">
+              <picture>
+                <source srcset="./img/aboutrest/desktop/tea-desktop.webp 1x, ./img/aboutrest/desktop/tea-desktop@2x.webp 2x" media="(min-width: 1280px)" />
+                <source srcset="./img/aboutrest/tablet/tea-tablet.webp 1x, ./img/aboutrest/tablet/tea-tablet@2x.webp 2x" media="(min-width: 1024px)" />
+               <img
+                 class="slider-first-img"
+                 srcset="./img/aboutrest/mobile/tea-mobile.webp 1x, ./img/aboutrest/mobile/tea-mobile@2x.webp 2x" 
+                 src="./img/aboutrest/mobile/tea-mobile.webp" 
+                 alt="tea on table" 
+               />
+              </picture>
+            </li>
+            <li class="about-img-item">
+              <picture>
+                <source srcset="./img/aboutrest/desktop/breakfast-desktop.webp 1x, ./img/aboutrest/desktop/breakfast-desktop@2x.webp 2x" media="(min-width: 1280px)" />
+                <source srcset="./img/aboutrest/tablet/breakfast-tablet.webp 1x, ./img/aboutrest/tablet/breakfast-tablet@2x.webp 2x" media="(min-width: 1024px)" />
+                <img
+                  class="slider-second-img"
+                  srcset="./img/aboutrest/mobile/breakfast-mobile.webp 1x, ./img/aboutrest/mobile/breakfast-mobile@2x.webp 2x" 
+                  src="./img/aboutrest/mobile/breakfast-mobile.webp" 
+                  alt="breakfast on table" 
+               />
+              </picture>
+            </li>
+          </ul>
         </div>
-        <button class="left-btn">
-          <svg class="left-icon" width="32px" height="32px">
+        <div class="slider"> 
+         <button class="left-btn">
+           <svg class="about-icon" width="32px" height="32px">
             <use href="./img/symbol-defs.svg#icon-left"></use>
-          </svg>
-        </button>
-        <button class="right-btn">
-          <svg class="left-icon" width="32px" height="32px">
-            <use href="./img/symbol-defs.svg#icon-right"></use>
-          </svg>
-        </button>
+           </svg>
+         </button>
+         <button class="right-btn">
+           <svg class="about-icon" width="32px" height="32px">
+             <use href="./img/symbol-defs.svg#icon-right"></use>
+           </svg>
+         </button>
+        </div>
       </div>
     </section>
     <section class="details-of-our-restaurant">
       <div class="container">
-        <p>MIMIHO</p>
+        <p class="details-logo">MIMIHO</p>
         <h2 class="rest-title">Ресторан</h2>
-        <p>
+        <p class="other-text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit.
         </p>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <button class="left-btn">
-          <svg class="left-icon" width="32px" height="32px">
-            <use href="./img/symbol-defs.svg#icon-left"></use>
-          </svg>
-        </button>
-        <button class="right-btn">
-          <svg class="left-icon" width="32px" height="32px">
-            <use href="./img/symbol-defs.svg#icon-right"></use>
-          </svg>
-        </button>
-        <button class="reserve-btn">Забронювати столик</button>
-        <a href="" class="view-menu-link">Переглянути меню</a>
+        <ul class="details-img-list">
+            <li class="details-img-item">
+                <img
+                  srcset="./img/detailsrest/steak.webp 1x, ./img/detailsrest/steak@2x.webp 2x"
+                  src="./img/detailsrest/steak.webp" 
+                  alt="steak" 
+                />
+            </li>
+            <li class="details-img-item">
+                <img
+                  srcset="./img/detailsrest/pizza.webp 1x, ./img/detailsrest/pizza@2x.webp 2x"
+                  src="./img/detailsrest/pizza.webp" 
+                  alt="steak" 
+            />
+            </li>
+            <li class="details-img-item">
+                <img 
+                  srcset="./img/detailsrest/shawarma.webp 1x,./img/detailsrest/shawarma@2x.webp 2x "
+                  src="./img/detailsrest/shawarma.webp" 
+                  alt="shawarma" 
+                />
+            </li>
+        </ul>
+        <div class="details-slider">
+         <button class="left-btn">
+           <svg class="details-icon" width="32px" height="32px">
+             <use href="./img/symbol-defs.svg#icon-left"></use>
+           </svg>
+         </button>
+         <button class="right-btn">
+           <svg class="details-icon" width="32px" height="32px">
+             <use href="./img/symbol-defs.svg#icon-right"></use>
+           </svg>
+         </button>
+        </div> 
+          <button class="reserve-btn">Забронювати столик</button>
+          <a href="" class="view-menu-link">Переглянути меню</a>
       </div>
+    </section>
+    <section>
+        <p></p>
     </section>
   </body>
 </html>
