@@ -175,56 +175,68 @@
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit.
         </p>
-        <ul class="details-img-list">
-          <li class="details-img-item">
-            <img
-              srcset="
-                ./img/detailsrest/steak.webp    1x,
-                ./img/detailsrest/steak@2x.webp 2x
-              "
-              src="./img/detailsrest/steak.webp"
-              alt="steak"
-            />
-          </li>
-          <li class="details-img-item">
-            <img
-              srcset="
-                ./img/detailsrest/pizza.webp    1x,
-                ./img/detailsrest/pizza@2x.webp 2x
-              "
-              src="./img/detailsrest/pizza.webp"
-              alt="steak"
-            />
-          </li>
-          <li class="details-img-item">
-            <img
-              srcset="
-                ./img/detailsrest/shawarma.webp    1x,
-                ./img/detailsrest/shawarma@2x.webp 2x
-              "
-              src="./img/detailsrest/shawarma.webp"
-              alt="shawarma"
-            />
-          </li>
-        </ul>
-        <div class="details-slider">
-          <button class="left-btn">
-            <svg class="details-icon" width="32px" height="32px">
-              <use href="./img/symbol-defs.svg#icon-left"></use>
-            </svg>
-          </button>
-          <button class="right-btn">
-            <svg class="details-icon" width="32px" height="32px">
-              <use href="./img/symbol-defs.svg#icon-right"></use>
-            </svg>
-          </button>
+        <div class="restourant-content-wrap">
+          <div class="restourant-slider">
+            <ul class="details-img-list">
+              <li class="details-img-item">
+                <img
+                  srcset="
+                    ./img/detailsrest/steak.webp    1x,
+                    ./img/detailsrest/steak@2x.webp 2x
+                  "
+                  src="./img/detailsrest/steak.webp"
+                  alt="steak"
+                />
+              </li>
+              <li class="details-img-item">
+                <img
+                  srcset="
+                    ./img/detailsrest/pizza.webp    1x,
+                    ./img/detailsrest/pizza@2x.webp 2x
+                  "
+                  src="./img/detailsrest/pizza.webp"
+                  alt="steak"
+                />
+              </li>
+              <li class="details-img-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/detailsrest/shawarma-desktop.webp    1x,
+                      ./img/detailsrest/shawarma-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/detailsrest/shawarma-tablet.webp    1x,
+                      ./img/detailsrest/shawarma-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <img src="./img/detailsrest/shawarma.jpg" alt="shawarma" />
+                </picture>
+              </li>
+            </ul>
+            <div class="details-slider">
+              <button class="left-btn">
+                <svg class="details-icon" width="32px" height="32px">
+                  <use href="./img/symbol-defs.svg#icon-left"></use>
+                </svg>
+              </button>
+              <button class="right-btn">
+                <svg class="details-icon" width="32px" height="32px">
+                  <use href="./img/symbol-defs.svg#icon-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="restourant-btn-wrap">
+            <button class="reserve-btn">Забронювати столик</button>
+            <a href="" class="view-menu-link">Переглянути меню</a>
+          </div>
         </div>
-        <button class="reserve-btn">Забронювати столик</button>
-        <a href="" class="view-menu-link">Переглянути меню</a>
       </div>
-    </section>
-    <section>
-      <p></p>
     </section>
   </body>
 </html>
